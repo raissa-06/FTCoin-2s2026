@@ -1,3 +1,8 @@
+package br.unicamp.ft.ftcoin.model;
+
+import br.unicamp.ft.ftcoin.enums.TipoOperacao;
+import br.unicamp.ft.ftcoin.exception.ValidacaoException;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 

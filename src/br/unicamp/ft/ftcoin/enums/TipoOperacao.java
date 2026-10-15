@@ -1,3 +1,7 @@
+package br.unicamp.ft.ftcoin.enums;
+
+import br.unicamp.ft.ftcoin.exception.ValidacaoException;
+
 public enum TipoOperacao {
     COMPRA('C'),
     VENDA('V');
@@ -20,8 +24,7 @@ public enum TipoOperacao {
                 return tipo;
             }
         }
-        throw new ValidacaoException(
-            "Tipo de operação inválido: '" + codigo + "'. Use 'C' (compra) ou 'V' (venda).");
+        throw new ValidacaoException("Tipo de operação inválido: '" + codigo + "'. Use 'C' (compra) ou 'V' (venda).");
     }
 
     //faz o String.valueOf(tipo) devolver "C" ou "V", como o DAO espera.

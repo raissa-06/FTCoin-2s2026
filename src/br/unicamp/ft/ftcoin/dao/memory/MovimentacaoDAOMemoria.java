@@ -1,4 +1,8 @@
-import java.util.ArrayList;
+package br.unicamp.ft.ftcoin.dao.memory;
+
+import br.unicamp.ft.ftcoin.exception.ValidacaoException;
+import br.unicamp.ft.ftcoin.model.Movimentacao;
+// ... demais importsimport java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -71,5 +75,7 @@ public class MovimentacaoDAOMemoria implements MovimentacaoDAO{
             throw new ValidacaoException("Movimentação " + id + " não encontrada.");
         }
     }
+
+    public class final 
 }
 //
