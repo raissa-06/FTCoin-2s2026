@@ -30,3 +30,4 @@ public enum TipoOperacao {
         return String.valueOf(codigo);
     }
 }
+
